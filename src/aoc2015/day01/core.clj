@@ -13,4 +13,4 @@
   (loop [idx 0 acc 0 list (vec s)]
     (if (= -1 acc)
       idx
-      (recur (inc idx) (+ acc (map-parenthesis (first list))) (rest list)))))
+      (recur (inc idx) (long (+ acc (map-parenthesis (first list)))) (rest list)))))
