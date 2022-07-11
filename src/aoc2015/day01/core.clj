@@ -1,4 +1,4 @@
-(ns day01.core)
+(ns aoc2015.day01.core)
 
 (defn map-parenthesis [c]
   (cond
