@@ -15,7 +15,9 @@ jobs:
     - uses: actions/checkout@v3
     - name: Install dependencies
       run: lein deps
-    - name: check format
+    - name: Check syntax and warn on reflection.
+      run: lein check
+    - name: Check format of Clojure source files
       run: lein cljfmt check
     - name: Run tests
       run: lein spec
