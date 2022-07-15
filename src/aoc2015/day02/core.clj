@@ -1,9 +1,6 @@
 (ns aoc2015.day02.core
   (:require [clojure.string :as str]))
 
-;; (defn find-smallest [xs]
-;;   (filter #(not= (apply max xs) %) xs))
-
 (defn convert-to-list [s]
   (map #(Integer/parseInt %) (str/split s #"x")))
 
